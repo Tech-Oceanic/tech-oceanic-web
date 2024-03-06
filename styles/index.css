@@ -5,10 +5,9 @@
 body {
   margin: 0px;
   background-color: var(--Dark-Black, #000);
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
 }
+
+/* NAV */
 nav .notification {
   height: 30px;
   display: flex;
@@ -44,7 +43,8 @@ nav .notification a {
 
 nav .nav {
   width: 100%;
-  margin: 20px 10px;
+  /* margin: 20px 10px; */
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -105,8 +105,9 @@ nav .nav .cta .primary_btn {
 nav .nav #hamburger {
   display: none;
   width: 40px;
-  margin: 0px 20px;
+  /* margin: 0px 20px; */
   cursor: pointer;
+  overflow: hidden;
 }
 
 nav .nav #hamburger img {
@@ -119,7 +120,7 @@ nav .nav #hamburger img {
   }
   nav .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   nav .nav #menu_items {
@@ -128,9 +129,9 @@ nav .nav #hamburger img {
     top: 100px;
     right: 20px;
     border-radius: 10px;
-    background: #ffffff56;
+    background: #fffffff1;
     flex-direction: column;
-    padding: 10px 40px;
+    padding: 10px 30px;
     margin: 10px;
     justify-content: space-between;
     box-shadow: 0 0 10px #4444;
@@ -143,27 +144,28 @@ nav .nav #hamburger img {
     top: 0;
     left: 0;
     border-radius: 10px;
-    opacity: 0.8;
+    opacity: 1;
     position: absolute;
     backdrop-filter: blur(40px);
     z-index: -1;
   }
 
   .item-btn {
-    background: transparent;
+    /* background: #fff; */
     padding: 10px 10px;
     border-radius: 10px;
+    width: 90%;
     border: none;
     outline: none;
-    color: #fff;
+    color: #444;
     margin: 4px;
     font-size: 1em;
     font-weight: 500;
     cursor: pointer;
   }
 
-  .item-btn:focus {
-    background: #ffffff82;
+  /* .item-btn:focus {
+    background: #ffffff;
     padding: 10px 10px;
     border-radius: 10px;
     border: none;
@@ -173,7 +175,7 @@ nav .nav #hamburger img {
     font-size: 1em;
     font-weight: 500;
     cursor: pointer;
-  }
+  } */
 
   nav .nav .items {
     display: none;
@@ -184,75 +186,19 @@ nav .nav #hamburger img {
   }
 
   nav .nav #hamburger {
-    display: inline;
+    display: flex;
   }
 }
 
-.services {
-  width: 100%;
-  display: grid;
-  place-items: center;
-  font-family: "League Spartan", system-ui, sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.2;
-  color: #ddd;
-  padding: 0px;
-}
-
-.main {
-  max-width: 75rem;
-  padding: 3em 1.5em;
-}
-
-.flow > * + * {
-  margin-top: var(--flow-space, 1.25em);
-}
-
-.cards {
-  position: relative;
-}
-
-.cards__inner {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5em;
-}
-
-.card {
-  --flow-space: 0.5em;
-  --hsl: var(--hue), var(--saturation), var(--lightness);
-  flex: 1 1 14rem;
-  padding: 1.5em 2em;
-  display: grid;
-  grid-template-rows: auto auto auto 1fr;
-  align-items: start;
-  /* gap: 1.25em; */
-  color: #eceff1;
-  background-color: #2b2b2b6c;
-  border: 1px solid #eceff133;
-  border-radius: 15px;
-}
-
-.card {
-  --hue: 165;
-  --saturation: 82.26%;
-  --lightness: 51.37%;
-}
+/* NAV */
 
 .main_body {
-  align-self: center;
-  display: flex;
   margin-top: 60px;
-  width: 100vw;
-  flex-direction: column;
-  align-items: center;
-  /* padding: 20px; */
 }
+
 @media (max-width: 991px) {
   .main_body {
-    /* max-width: 100%; */
-    margin-top: 10px;
-    padding: 20px;
+    margin-top: 20px;
   }
 }
 .main_body .full_bg {
@@ -283,7 +229,6 @@ nav .nav #hamburger img {
 .hero_sec {
   align-self: center;
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -372,14 +317,14 @@ nav .nav #hamburger img {
     font: 700 20px/120% Poppins, sans-serif;
   }
 }
-.div-6 {
+.para1 {
   color: #969696;
   text-align: center;
   margin-top: 7px;
   font: 400 15px/30px Poppins, sans-serif;
 }
 @media (max-width: 991px) {
-  .div-6 {
+  .para1 {
     max-width: 100%;
   }
 }
@@ -477,18 +422,22 @@ nav .nav #hamburger img {
     white-space: initial;
   }
 }
-.div-13 {
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service_items {
   margin-top: 113px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   max-width: 80%;
-  padding: 20px;
   align-items: center;
   justify-content: center;
 }
 @media (max-width: 991px) {
-  .div-13 {
+  .service_items {
     max-width: 100%;
     margin-top: 40px;
   }
@@ -510,7 +459,6 @@ nav .nav #hamburger img {
   padding: 35px 26px;
   margin: 20px;
   background: #44444422;
-  /* z-index: 10; */
 }
 @media (max-width: 991px) {
   .box {
