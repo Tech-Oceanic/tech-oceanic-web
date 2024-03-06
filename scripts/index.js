@@ -33,3 +33,15 @@
 
 // cards.forEach(initOverlayCard);
 // document.body.addEventListener("pointermove", applyOverlayMask);
+
+// Hamburger
+
+function toggleHam() {
+  var menu_items = document.getElementById("menu_items");
+
+  if (menu_items.style.display == "none" || menu_items.style.display == "") {
+    menu_items.style.display = "flex";
+  } else {
+    menu_items.style.display = "none";
+  }
+}

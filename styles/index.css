@@ -50,6 +50,10 @@ nav .nav {
   align-items: center;
 }
 
+nav .nav .menu_items {
+  display: none;
+}
+
 nav .nav .items .item-btn {
   background: transparent;
   border: none;
@@ -65,12 +69,6 @@ nav .nav .logo {
   /* margin-left: ; */
 }
 
-nav .nav .logo img {
-}
-
-nav .nav .items {
-}
-
 nav .nav .cta {
   display: flex;
   flex-direction: row;
@@ -80,16 +78,114 @@ nav .nav .cta .phone {
   cursor: pointer;
 }
 
-nav .nav .cta .schedule-a-demo {
+nav .nav .cta .primary_btn {
   margin-left: 20px;
   border-radius: 8px;
-  padding: 4px 20px;
+  padding: 14px 20px;
   color: #fff;
   font-weight: 400;
   font-size: 1em;
   cursor: pointer;
   background: linear-gradient(45deg, #00acea, #03488c);
   border: none;
+}
+
+.primary_btn {
+  margin-left: 20px;
+  border-radius: 8px;
+  padding: 14px 20px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1em;
+  cursor: pointer;
+  background: linear-gradient(45deg, #00acea, #03488c);
+  border: none;
+}
+
+nav .nav #hamburger {
+  display: none;
+  width: 40px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+nav .nav #hamburger img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  nav .notification button {
+    display: none;
+  }
+  nav .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav .nav #menu_items {
+    position: absolute;
+    display: none;
+    top: 100px;
+    right: 20px;
+    border-radius: 10px;
+    background: #ffffff56;
+    flex-direction: column;
+    padding: 10px 40px;
+    margin: 10px;
+    justify-content: space-between;
+    box-shadow: 0 0 10px #4444;
+  }
+  
+  .glass_menu {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    opacity: 0.8;
+    position: absolute;
+    backdrop-filter: blur(40px);
+    z-index: -1;
+  }
+
+  .item-btn {
+    background: transparent;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin: 4px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .item-btn:focus {
+    background: #ffffff82;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #444;
+    margin: 4px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  nav .nav .items {
+    display: none;
+  }
+
+  nav .nav .cta {
+    display: none;
+  }
+
+  nav .nav #hamburger {
+    display: inline;
+  }
 }
 
 .services {
@@ -143,39 +239,35 @@ nav .nav .cta .schedule-a-demo {
   --lightness: 51.37%;
 }
 
-/* .div {
-  background-color: var(--Dark-Black, #000);
-  display: flex;
-  flex-direction: column;
-} */
-.div-2 {
+.main_body {
   align-self: center;
   display: flex;
-  margin-top: 80px;
-  width: 100%;
+  margin-top: 60px;
+  width: 100vw;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 @media (max-width: 991px) {
-  .div-2 {
-    max-width: 100%;
-    margin-top: 80px;
+  .main_body {
+    /* max-width: 100%; */
+    margin-top: 10px;
+    padding: 20px;
   }
 }
-.div-2 .full_bg {
+.main_body .full_bg {
   width: 100vw;
   position: absolute;
   top: 50px;
   right: 0;
-  opacity: 1;
+  opacity: 0.9;
   z-index: -1;
 }
-.div-2 .full_bg img {
+.main_body .full_bg img {
   width: 100%;
 }
 @media (max-width: 991px) {
-  .div-2 .full_bg {
+  .main_body .full_bg {
     width: 100vw;
     position: absolute;
     top: 50px;
@@ -183,7 +275,7 @@ nav .nav .cta .schedule-a-demo {
     opacity: 1;
     z-index: -1;
   }
-  .div-2 .full_bg img {
+  .main_body .full_bg img {
     width: 100%;
   }
 }
@@ -199,7 +291,15 @@ nav .nav .cta .schedule-a-demo {
 @media (max-width: 991px) {
   .hero_sec {
     max-width: 100%;
-    margin-top: 80px;
+    margin-top: 30px;
+  }
+  .main_body .full_bg {
+    height: 100vh;
+    width: auto;
+  }
+  .main_body .full_bg img {
+    height: 100%;
+    object-fit: cover;
   }
 }
 .bg_blur_bottom {
@@ -332,13 +432,26 @@ nav .nav .cta .schedule-a-demo {
   object-position: center;
   width: 24px;
 }
-.div-10 {
+.icon_btn {
   font-family: Poppins, sans-serif;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   flex-grow: 1;
   margin: auto 0;
+  outline: none;
+  border: none;
+  background: linear-gradient(45deg, #00acea, #03488c);
+  color: #fff;
+}
+.icon_btn img {
+  margin-right: 6px;
 }
 @media (max-width: 991px) {
-  .div-10 {
+  .icon_btn {
     white-space: initial;
   }
 }
@@ -369,6 +482,7 @@ nav .nav .cta .schedule-a-demo {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 80%;
   padding: 20px;
   align-items: center;
   justify-content: center;
@@ -1679,20 +1793,7 @@ nav .nav .cta .schedule-a-demo {
     max-width: 100%;
   }
 }
-.div-107 {
-  overflow: hidden;
-  z-index: 10;
-  margin-top: 153px;
-  width: 100%;
-  padding: 39px 38px 0;
-}
-@media (max-width: 991px) {
-  .div-107 {
-    max-width: 100%;
-    margin-top: 40px;
-    padding: 0 20px;
-  }
-}
+
 .div-108 {
   gap: 20px;
   display: flex;
@@ -1981,7 +2082,7 @@ nav .nav .cta .schedule-a-demo {
   object-position: center;
   width: 70px;
 }
-.div-118 {
+.footer {
   align-self: center;
   display: flex;
   margin-top: 96px;
@@ -1991,7 +2092,7 @@ nav .nav .cta .schedule-a-demo {
   padding: 0 20px;
 }
 @media (max-width: 991px) {
-  .div-118 {
+  .footer {
     max-width: 100%;
     margin-top: 40px;
   }
