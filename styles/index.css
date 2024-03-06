@@ -9,6 +9,140 @@ body {
   flex-direction: column;
   overflow-x: hidden;
 }
+nav .notification {
+  height: 30px;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(90deg, #00acea, #03488c);
+}
+nav .notification button {
+  background: #fff;
+  border-radius: 8px;
+  color: #000;
+  outline: none;
+  border: none;
+  padding: 8px 20px;
+  margin: 0 10px;
+}
+nav .notification p {
+  margin: 10px;
+  color: #ffffffc1;
+  letter-spacing: 0.04em;
+  font-size: 1em;
+  font-weight: 100;
+}
+nav .notification p span {
+  color: #ffffff;
+}
+nav .notification a {
+  margin: 10px;
+  color: #fff;
+}
+
+nav .nav {
+  width: 100%;
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .nav .items .item-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+nav .nav .logo {
+  /* margin-left: ; */
+}
+
+nav .nav .logo img {
+}
+
+nav .nav .items {
+}
+
+nav .nav .cta {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .nav .cta .phone {
+  cursor: pointer;
+}
+
+nav .nav .cta .schedule-a-demo {
+  margin-left: 20px;
+  border-radius: 8px;
+  padding: 4px 20px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1em;
+  cursor: pointer;
+  background: linear-gradient(45deg, #00acea, #03488c);
+  border: none;
+}
+
+.services {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-family: "League Spartan", system-ui, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  color: #ddd;
+  padding: 0px;
+}
+
+.main {
+  max-width: 75rem;
+  padding: 3em 1.5em;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1.25em);
+}
+
+.cards {
+  position: relative;
+}
+
+.cards__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+}
+
+.card {
+  --flow-space: 0.5em;
+  --hsl: var(--hue), var(--saturation), var(--lightness);
+  flex: 1 1 14rem;
+  padding: 1.5em 2em;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: start;
+  /* gap: 1.25em; */
+  color: #eceff1;
+  background-color: #2b2b2b6c;
+  border: 1px solid #eceff133;
+  border-radius: 15px;
+}
+
+.card {
+  --hue: 165;
+  --saturation: 82.26%;
+  --lightness: 51.37%;
+}
+
 /* .div {
   background-color: var(--Dark-Black, #000);
   display: flex;
@@ -29,6 +163,18 @@ body {
     margin-top: 80px;
   }
 }
+.div-2 .full_bg {
+  width: 100vw;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+.div-2 .full_bg img {
+  width: 100%;
+}
+
 .hero_sec {
   align-self: center;
   display: flex;
