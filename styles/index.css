@@ -50,6 +50,10 @@ nav .nav {
   align-items: center;
 }
 
+nav .nav #menu-items {
+  /* display: none; */
+}
+
 nav .nav .items .item-btn {
   background: transparent;
   border: none;
@@ -90,6 +94,65 @@ nav .nav .cta .schedule-a-demo {
   cursor: pointer;
   background: linear-gradient(45deg, #00acea, #03488c);
   border: none;
+}
+
+nav .nav #hamburger {
+  /* display: none; */
+  width: 40px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+nav .nav #hamburger img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  nav .notification button {
+    display: none;
+  }
+  nav .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav .nav #menu_items {
+    position: absolute;
+    width: 70%;
+    display: none;
+    top: 100px;
+    right: 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+  }
+
+  .item-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000;
+    margin: 4px;
+    font-size: 1em;
+    font-weight: 300;
+    cursor: pointer;
+  }
+
+  nav .nav .items {
+    display: none;
+  }
+
+  nav .nav .cta {
+    display: none;
+  }
+
+  nav .nav #hamburger {
+    display: inline;
+  }
 }
 
 .services {
@@ -168,7 +231,7 @@ nav .nav .cta .schedule-a-demo {
   position: absolute;
   top: 50px;
   right: 0;
-  opacity: 0.6;
+  opacity: 0.9;
   z-index: -1;
 }
 .div-2 .full_bg img {
@@ -187,6 +250,14 @@ nav .nav .cta .schedule-a-demo {
   .hero_sec {
     max-width: 100%;
     margin-top: 80px;
+  }
+  .div-2 .full_bg {
+    height: 100vh;
+    width: auto;
+  }
+  .div-2 .full_bg img {
+    height: 100%;
+    object-fit: cover;
   }
 }
 .bg_blur_bottom {
