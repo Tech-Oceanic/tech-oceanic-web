@@ -188,6 +188,22 @@ nav .nav #hamburger img {
   nav .nav #hamburger {
     display: flex;
   }
+             
+  nav .notification p {
+    margin: 10px;
+    color: #ffffffc1;
+    letter-spacing: 0.04em;
+    font-size: 0.8em;
+    font-weight: 100;
+  }
+  nav .notification p span {
+    color: #ffffff;
+  }
+  nav .notification a {
+    margin: 10px;
+    color: #fff;
+  }
+  
 }
 
 /* NAV */
@@ -232,11 +248,12 @@ nav .nav #hamburger img {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin-top: 100px;
 }
 @media (max-width: 991px) {
   .hero_sec {
     max-width: 100%;
-    margin-top: 30px;
+    margin-top: 90px;
   }
   .main_body .full_bg {
     height: 100vh;
@@ -269,7 +286,7 @@ nav .nav #hamburger img {
   border-radius: 50%;
   filter: blur(200px);
 }
-.div-3 {
+.title1 {
   color: #fff;
   text-align: center;
   background: linear-gradient(91deg, #01aae8 2.04%, #034e92 97.71%);
@@ -278,8 +295,15 @@ nav .nav #hamburger img {
   -webkit-text-fill-color: transparent;
   font: 700 52px/60px Poppins, sans-serif;
 }
+.column {
+  margin: 10px 20px;
+  background: #ffffff39;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
 @media (max-width: 991px) {
-  .div-3 {
+  .title1 {
     max-width: 100%;
     font-size: 40px;
     line-height: 51px;
@@ -321,6 +345,7 @@ nav .nav #hamburger img {
   color: #969696;
   text-align: center;
   margin-top: 7px;
+  max-width: 700px;
   font: 400 15px/30px Poppins, sans-serif;
 }
 @media (max-width: 991px) {
@@ -784,20 +809,36 @@ nav .nav #hamburger img {
     padding: 0 20px;
   }
 }
-.div-36 {
+.work {
+  margin-top: 113px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  /* max-width: 80%; */
+  align-items: center;
   justify-content: center;
-  border-radius: 6.294px;
+}
+@media (max-width: 991px) {
+  .work {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+.glass_text_blue {
+  justify-content: center;
+  border-radius: 8px;
   background-color: rgba(3, 87, 153, 0.29);
-  margin-top: 152px;
   color: #0271b2;
   white-space: nowrap;
   padding: 12px 14px;
+  margin: 40px 0px;
+  text-align: center;
   font: 400 15px/170% Poppins, sans-serif;
 }
 @media (max-width: 991px) {
-  .div-36 {
+  .glass_text_blue {
     white-space: initial;
-    margin-top: 40px;
   }
 }
 .div-37 {
@@ -813,7 +854,8 @@ nav .nav #hamburger img {
     max-width: 100%;
   }
 }
-.div-38 {
+
+/* .div-38 {
   color: #8e94a7;
   text-align: center;
   margin-top: 22px;
@@ -824,11 +866,10 @@ nav .nav #hamburger img {
   .div-38 {
     max-width: 100%;
   }
-}
+} */
 .div-39 {
   margin-top: 124px;
   width: 100%;
-  max-width: 1200px;
 }
 @media (max-width: 991px) {
   .div-39 {
@@ -837,8 +878,12 @@ nav .nav #hamburger img {
   }
 }
 .div-40 {
-  gap: 20px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
 }
 @media (max-width: 991px) {
   .div-40 {
@@ -920,7 +965,7 @@ nav .nav #hamburger img {
   margin-top: 8px;
   font: 700 39px/46px Poppins, sans-serif;
 }
-.div-46 {
+.para2 {
   color: #8e94a7;
   align-self: stretch;
   margin-top: 29px;
@@ -957,7 +1002,7 @@ nav .nav #hamburger img {
   object-position: center;
   width: 78px;
 }
-.div-48 {
+.text_with_gradient {
   background: linear-gradient(
     90deg,
     #501e9c 0%,
@@ -971,10 +1016,11 @@ nav .nav #hamburger img {
   -webkit-text-fill-color: transparent;
   margin-top: 14px;
   white-space: nowrap;
+  text-wrap: wrap;
   font: 700 39px/120% Poppins, sans-serif;
 }
 @media (max-width: 991px) {
-  .div-48 {
+  .text_with_gradient {
     white-space: initial;
   }
 }
@@ -1086,7 +1132,7 @@ nav .nav #hamburger img {
     padding: 0 20px;
   }
 }
-.div-58 {
+/* .div-58 {
   margin-top: 118px;
   width: 100%;
   max-width: 1173px;
@@ -1096,7 +1142,7 @@ nav .nav #hamburger img {
     max-width: 100%;
     margin-top: 40px;
   }
-}
+} */
 .div-59 {
   gap: 20px;
   display: flex;
@@ -1122,7 +1168,6 @@ nav .nav #hamburger img {
 }
 .div-60 {
   display: flex;
-  margin-top: 141px;
   flex-grow: 1;
   flex-direction: column;
   font-weight: 400;
@@ -1130,7 +1175,6 @@ nav .nav #hamburger img {
 @media (max-width: 991px) {
   .div-60 {
     max-width: 100%;
-    margin-top: 40px;
   }
 }
 .div-61 {
@@ -1183,16 +1227,16 @@ nav .nav #hamburger img {
     width: 100%;
   }
 }
-.img-11 {
-  aspect-ratio: 1.19;
+
+.solutions_img {
+  /* aspect-ratio: 1.19; */
   object-fit: auto;
   object-position: center;
-  width: 100%;
+  width: 80%;
   flex-grow: 1;
 }
 @media (max-width: 991px) {
-  .img-11 {
-    max-width: 100%;
+  .solutions_img {
     margin-top: 40px;
   }
 }
@@ -1471,9 +1515,15 @@ nav .nav #hamburger img {
     padding: 0 20px;
   }
 }
-.div-88 {
-  align-self: stretch;
-  margin-top: 216px;
+.customer_reviews {
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .div-88 {
   padding: 0 2px;
 }
 @media (max-width: 991px) {
@@ -1481,16 +1531,15 @@ nav .nav #hamburger img {
     max-width: 100%;
     margin-top: 40px;
   }
-}
+} */
+
 .div-89 {
-  gap: 20px;
   display: flex;
 }
 @media (max-width: 991px) {
   .div-89 {
     flex-direction: column;
     align-items: stretch;
-    gap: 0px;
   }
 }
 .column-12 {
@@ -1579,7 +1628,7 @@ nav .nav #hamburger img {
   width: 100px;
   align-self: center;
 }
-.div-96 {
+.customers_review_title {
   color: #fff;
   margin-top: 14px;
   font: 700 26px/120% Poppins, sans-serif;
@@ -1602,11 +1651,56 @@ nav .nav #hamburger img {
     white-space: initial;
   }
 }
-.img-14 {
+.customer_reviews_img {
   aspect-ratio: 1.03;
   object-fit: auto;
   object-position: center;
-  width: 33px;
+  width: 30px;
+
+}
+.customers_review_globe_image {
+  opacity: 0.4;
+}
+/* .customers_review_post {
+  margin-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.customers_review_post .customer_details {
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+}
+.customers_review_post .customer_details .review_avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px ;
+}
+.customers_review_post .customer_details .review_avatar img{
+  width: 100%;
+}
+.customers_review_post .customer_details .review_avatar img{
+  width: 100%;
+}
+.customers_review_post p {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 100;
+} */
+@media (max-width: 991px) {
+  /* .customers_review_post {
+    margin-top: 20px;
+  } */
+  .customers_review_globe_image {
+    opacity: 0.4;
+    position: absolute;
+    width: 94%;
+    overflow: hidden;
+  }
+
 }
 .div-99 {
   color: #fff;
@@ -2030,12 +2124,70 @@ nav .nav #hamburger img {
   object-position: center;
   width: 70px;
 }
+
+.community {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.community h2 {
+  color: #fff;
+  text-align: center;
+  background: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: 700 52px/60px Poppins, sans-serif;
+}
+.community p {
+  color: #fff;
+}
+.community .community_image {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.community .community_image img {
+  margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+  .community {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .community h2 {
+    color: #fff;
+    font-size: 1.3em;
+  }
+  .community h2 .title1{
+    color: #fff;
+    font-size: 1.3em;
+  }
+  .community p {
+    color: #fff;
+  }
+  .community .community_image {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .community .community_image img {
+    margin-right: 10px;
+    width: 10%;
+  }
+}
+
 .footer {
   align-self: center;
   display: flex;
   margin-top: 96px;
   width: 100%;
-  max-width: 1200px;
+  overflow: hidden;
   flex-direction: column;
   padding: 0 20px;
 }
