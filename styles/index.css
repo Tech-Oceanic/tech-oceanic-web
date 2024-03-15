@@ -136,7 +136,7 @@ nav .nav #hamburger img {
     justify-content: space-between;
     box-shadow: 0 0 10px #4444;
   }
-  
+
   .glass_menu {
     width: 100%;
     height: 100%;
@@ -188,7 +188,7 @@ nav .nav #hamburger img {
   nav .nav #hamburger {
     display: flex;
   }
-             
+
   nav .notification p {
     margin: 10px;
     color: #ffffffc1;
@@ -203,7 +203,6 @@ nav .nav #hamburger img {
     margin: 10px;
     color: #fff;
   }
-  
 }
 
 /* NAV */
@@ -883,7 +882,6 @@ nav .nav #hamburger img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
 }
 @media (max-width: 991px) {
   .div-40 {
@@ -1656,7 +1654,6 @@ nav .nav #hamburger img {
   object-fit: auto;
   object-position: center;
   width: 30px;
-
 }
 .customers_review_globe_image {
   opacity: 0.4;
@@ -1700,7 +1697,6 @@ nav .nav #hamburger img {
     width: 94%;
     overflow: hidden;
   }
-
 }
 .div-99 {
   color: #fff;
@@ -2152,7 +2148,6 @@ nav .nav #hamburger img {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .community .community_image img {
   margin-right: 10px;
@@ -2164,10 +2159,9 @@ nav .nav #hamburger img {
   bottom: 0;
   left: 0;
   width: 100vw;
-
 }
 
-.community_bg img{
+.community_bg img {
   width: 100%;
   object-fit: cover;
 }
@@ -2176,13 +2170,13 @@ nav .nav #hamburger img {
   .community {
     margin-top: 40px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 20px 0;
   }
   .community h2 {
     color: #fff;
     font-size: 1.3em;
   }
-  .community h2 .title1{
+  .community h2 .title1 {
     color: #fff;
     font-size: 1.3em;
   }
@@ -2201,10 +2195,10 @@ nav .nav #hamburger img {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
   }
-  
-  .community_bg img{
+
+  .community_bg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2214,7 +2208,7 @@ nav .nav #hamburger img {
 .social_graphics {
   width: 100%;
 }
-.social_graphics img{
+.social_graphics img {
   width: 100%;
 }
 
