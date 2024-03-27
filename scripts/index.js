@@ -94,6 +94,8 @@ document.querySelector("main").addEventListener(('click'), () => {
   } else {
     calendly_meeting.style.display = "none";
   }
-
-
 })
+
+// function navigatePage(page) {
+//   window.location = ""
+// }
